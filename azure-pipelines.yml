@@ -7,9 +7,14 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
+
+strategy:
+  maxParallel: 1
 
 steps:
 - script: |
-    bash code.sh
-  displayName: 'Run a multi-line script'
+    # Run your commands here
+    echo "Running single job"
+  displayName: 'Run single job'
+
