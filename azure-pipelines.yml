@@ -14,7 +14,6 @@ strategy:
 
 steps:
 - script: |
-    # Run your commands here
     echo "Running single job"
   displayName: 'Run single job'
   timeoutInMinutes: 30
