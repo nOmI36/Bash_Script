@@ -8,4 +8,4 @@ steps:
 
 - task: Bash@3
   inputs:
-    filePath: '/code.sh'
+    filePath: '$(System.DefaultWorkingDirectory)/code.sh'
